@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-image-editor" version="1.0.0">
+    <name>Image editor</name>
+    <description>Android native image editor launcher for cordova</description>
+    <license>MIT License</license>
+    <keywords>cordova,image</keywords>
+    <repo>https://github.com/lifecareimaging/cordova-plugin-image-editor</repo>
+    <issue>https://github.com/lifecareimaging/cordova-plugin-image-editor/issues</issue>
+
+    <engines>
+        <engine name="cordova-android" version="8.1.0" />
+    </engines>
+
+    <js-module src="www/image-editor.js" name="ImageEditor">
+        <clobbers target="ImageEditor" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ImageEditor">
+                <param name="android-package" value="com.lifecare.cordova.editor.ImageEditor"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.lifecare.cordova.editor.ImageEditor" android:screenOrientation="portrait"></activity>
+        </config-file>
+        <source-file src="src/android/ImageEditor.java" target-dir="src/com/lifecare/cordova/editor"/>
+        <framework src="src/android/image-editor.gradle" custom="true" type="gradleReference"/>
+    </platform>
+</plugin>
