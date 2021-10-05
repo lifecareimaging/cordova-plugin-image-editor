@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-image-editor",
+  "version": "1.0.0",
+  "description": "Cordova plugin for native image editor",
+  "cordova": {
+    "id": "cordova-plugin-image-editor",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lifecareimaging/cordova-plugin-image-editor"
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "UMD",
+    "library"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lifecareimaging/cordova-plugin-image-editor/issues"
+  },
+  "homepage": "https://github.com/lifecareimaging/cordova-plugin-image-editor",
+  "dependencies": {
+    "cordova-android": "^8.1.0"
+  }
+}
