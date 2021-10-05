@@ -1,2 +1,3 @@
 # cordova-plugin-image-editor
-Android only image editor for cordova
+
+Android native image editor launcher for cordova
