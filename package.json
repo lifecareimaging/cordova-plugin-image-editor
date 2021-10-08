@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-image-editor",
   "version": "1.0.0",
-  "description": "Cordova plugin for native image editor",
+  "description": "Cordova image editor plugin",
   "cordova": {
     "id": "cordova-plugin-image-editor",
     "platforms": [
