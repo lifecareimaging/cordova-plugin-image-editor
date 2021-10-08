@@ -2,7 +2,7 @@
 <widget id="com.lifecare.cordova.editor" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>ImageEditor</name>
     <description>
-        Android native image editor launcher for cordova
+        Native image editor launcher for cordova
     </description>
     <content src="index.html" />
     <access origin="*" />

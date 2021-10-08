@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="cordova-plugin-image-editor" version="1.0.0">
     <name>Image editor</name>
-    <description>Android native image editor launcher for cordova</description>
+    <description>Native image editor launcher for cordova</description>
     <license>MIT License</license>
     <keywords>cordova,image</keywords>
     <repo>https://github.com/lifecareimaging/cordova-plugin-image-editor</repo>
