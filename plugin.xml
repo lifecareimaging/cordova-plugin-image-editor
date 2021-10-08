@@ -32,4 +32,22 @@
         <source-file src="src/android/ImageEditor.java" target-dir="src/com/lifecare/cordova/editor"/>
         <framework src="src/android/image-editor.gradle" custom="true" type="gradleReference"/>
     </platform>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ImageEditor">
+                <param name="ios-package" value="ImageEditor"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/ImageEditor.swift"/>
+        <dependency id="cordova-plugin-add-swift-support" spec="~1.7.2" />
+        
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="ZLImageEditor" spec="~> 1.0.3"/>
+            </pods>
+        </podspec>
+    </platform>
 </plugin>
