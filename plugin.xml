@@ -30,6 +30,7 @@
             <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.lifecare.cordova.editor.ImageEditor" android:screenOrientation="portrait"></activity>
         </config-file>
         <source-file src="src/android/ImageEditor.java" target-dir="src/com/lifecare/cordova/editor"/>
+        <source-file src="src/android/ImageEditorConstants.java" target-dir="src/com/lifecare/cordova/editor"/>
         <framework src="src/android/image-editor.gradle" custom="true" type="gradleReference"/>
     </platform>
     <platform name="ios">
