@@ -63,13 +63,15 @@ public class ImageEditor extends CordovaPlugin {
         Uri imageUri = getUriWithFileProvider(imagePath);
 
         intent.setDataAndType(imageUri, FileType.IMAGE);
+        intent.setPackage(ImageEditorConstants.GOOGLE_PHOTOS_PACKAGE_NAME);
+
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         intent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
 
         intent.putExtra(MediaStoreExtra.OUTPUT, imageUri);
         intent.putExtra(MediaStoreExtra.RETURN_DATA, true);
 
-        cordova.startActivityForResult((CordovaPlugin) this, Intent.createChooser(intent, null), ImageEditorConstants.IMAGE_URL_CODE);
+        cordova.startActivityForResult((CordovaPlugin) this, intent, ImageEditorConstants.IMAGE_URL_CODE);
     }
 
     private Uri getUriWithFileProvider(String path) {

@@ -5,6 +5,7 @@ public class ImageEditorConstants {
     public static final String PROVIDER_EXTENSION = ".provider";
     public static final String FILE_PREFIX = "file://";
     public static final String APPLICATION_ID_KEY = "APPLICATION_ID";
+    public static final String GOOGLE_PHOTOS_PACKAGE_NAME = "com.google.android.apps.photos";
 
     static class ImageEditorAction {
         public static final String EDIT_IMAGE = "editImage";
