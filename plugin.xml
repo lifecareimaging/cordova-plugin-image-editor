@@ -29,7 +29,7 @@
         <config-file target="AndroidManifest.xml" parent="application">
           <provider
               android:name="com.lifecare.cordova.editor.FileProvider"
-              android:authorities="${applicationId}.provider"
+              android:authorities="${applicationId}.editor.provider"
               android:exported="false"
               android:grantUriPermissions="true" >
               <meta-data
