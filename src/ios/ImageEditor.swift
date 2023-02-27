@@ -50,7 +50,7 @@ class ImageEditor: CDVPlugin {
     }
     
     func editSelectedImage(_ image: UIImage, editModel: ZLEditImageModel?, command: CDVInvokedUrlCommand, completion:@escaping (_ resImage: UIImage?) throws -> ()) throws {
-        ZLImageEditorConfiguration.default().editImageTools = [.draw, .clip, .imageSticker, .textSticker]
+        ZLImageEditorConfiguration.default().editImageTools([.draw, .clip, .imageSticker, .textSticker])
 
         ZLEditImageViewController.showEditImageVC(parentVC: self.viewController, image: image, editModel: editModel) { [weak self] (resImage, editModel) in
             if (image.isEqual(resImage)) {
