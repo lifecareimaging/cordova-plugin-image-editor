@@ -1,8 +1,0 @@
-{
-  "appId": "com.lifecare.cordova.editor.ImageEditor",
-  "appName": "Image editor",
-  "webDir": "www",
-  "server": {
-    "androidScheme": "https"
-  }
-}
