@@ -26,17 +26,6 @@
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
-        <config-file target="AndroidManifest.xml" parent="application">
-          <provider
-              android:name="com.lifecare.cordova.editor.FileProvider"
-              android:authorities="${applicationId}.editor.provider"
-              android:exported="false"
-              android:grantUriPermissions="true" >
-              <meta-data
-                  android:name="android.support.FILE_PROVIDER_PATHS"
-                  android:resource="@xml/camera_provider_paths"/>
-          </provider>
-        </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.lifecare.cordova.editor.ImageEditor" android:screenOrientation="portrait"></activity>
         </config-file>
