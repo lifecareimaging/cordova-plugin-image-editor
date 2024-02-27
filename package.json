@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/lifecareimaging/cordova-plugin-image-editor",
   "dependencies": {
+    "@capacitor/android": "^5.7.0",
+    "@capacitor/cli": "^5.7.0",
+    "@capacitor/core": "^5.7.0",
     "dot-prop": ">=4.2.1"
-  },
-  "devDependencies": {
-    "cordova-android": "^11.0.0"
   }
 }
